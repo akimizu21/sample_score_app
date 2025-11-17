@@ -13,5 +13,7 @@ pip install --no-cache-dir -r backend/requirements.txt
 # FLASKアプリケーションのパスを指定（flaskrを含める）
 export FLASK_APP=wsgi:app
 
-# データベースマイグレーション
+# backendディレクトリに移動してマイグレーション実行
+cd backend
 flask db upgrade
+cd ..
