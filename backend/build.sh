@@ -11,4 +11,4 @@ pip install --no-cache-dir -r requirements.txt
 export FLASK_APP=wsgi:app
 
 # backendディレクトリに移動してマイグレーション実行
-flask db upgrade..
+flask db upgrade
