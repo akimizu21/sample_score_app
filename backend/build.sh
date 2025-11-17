@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -o errexit
 
-# 依存関係のインストール
+# pipとビルドツールのアップグレード
 pip install --upgrade pip setuptools wheel
+
+# 依存関係のインストール（キャッシュなしでメモリ節約）
 pip install --no-cache-dir -r requirements.txt
 
 # FLASKアプリケーションのパスを指定
