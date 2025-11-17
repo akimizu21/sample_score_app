@@ -65,7 +65,7 @@ def _fix_seq(table: str, id_col: str):
 
 @imports_bp.route("/imports/students", methods=["POST"])
 def import_students():
-    file = request.files.get("file")
+    file = request.files.get("file") or request.files.get("students_file")
     if not file:
         return jsonify({"error": "file がありません"}), 400
 
