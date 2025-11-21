@@ -14,7 +14,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# Pythonのみ無視
+backend/lib/
 lib64/
 parts/
 sdist/
