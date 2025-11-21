@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "http://localhost:5000/api", // FlaskサーバーURL
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://sample-score-app-backend.onrender.com/api",
   headers: { "Content-Type": "application/json" },
 });
 
