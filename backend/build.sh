@@ -4,11 +4,11 @@ set -o errexit
 # pipとビルドツールのアップグレード
 pip install --upgrade pip setuptools wheel
 
-# 依存関係のインストール（backendフォルダ内のrequirements.txt）
+# 依存関係のインストール
 pip install --no-cache-dir -r requirements.txt
 
-# FLASKアプリケーションのパスを指定（flaskrを含める）
+# FLASKアプリケーションのパスを指定
 export FLASK_APP=wsgi:app
 
-# backendディレクトリに移動してマイグレーション実行
+# データベースマイグレーション
 flask db upgrade

@@ -1,1 +1,1 @@
-# sample_score_app
+# ManavisGradesApp
